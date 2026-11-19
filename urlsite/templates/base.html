@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир кавалеров</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Мир кавалеров</h1>
+        <p>Всё о замечательной породе собак</p>
+    </header>
+
+    <nav>
+    <a href="/">Главная</a> |
+    <a href="/about/">О блоге</a> |
+    <a href="/post/">Публикация</a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2026 Мир кавалеров</p>
+    </footer>
+
+</body>
+</html>
